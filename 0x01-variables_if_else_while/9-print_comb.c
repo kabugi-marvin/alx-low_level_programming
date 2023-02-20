@@ -12,15 +12,11 @@ int main(void)
 	c = 0;
 	while (c <= 9)
 	{
-		if  (!(c == 9))
+		putchar(c + '0');
+		if (!(c == 9))
 		{
-			putchar(c + '0');
 			putchar(44);
 			putchar(32);
-		}
-		else
-		{
-			putchar(c + '0');
 		}
 		c++;
 	}
