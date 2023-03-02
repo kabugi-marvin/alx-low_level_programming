@@ -14,10 +14,10 @@ int _strcmp(char *s1, char *s2)
 
 	length = strlen(s1);
 	length2 = strlen(s2);
-	if (length == length2)
-		return (0);
+	if (length > length2)
+		return (15);
 	else if (length < length2)
 		return (-15);
 	else
-		return (15);
+		return (0);
 }
